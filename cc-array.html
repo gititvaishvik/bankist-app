@@ -1,0 +1,24 @@
+<script>
+  dogs1 = [3, 5, 2, 12, 7];
+  dogs2 = [4, 1, 15, 8, 3];
+  function checkDogs(arr1, arr2) {
+    function arrSlice(arr) {
+      arr.splice(0, 1);
+      arr.splice(-2);
+      return arr;
+    }
+    let arrFinal1 = arrSlice(arr1);
+    let arrFinal2 = arrSlice(arr2);
+    arrFinal1 = arrFinal1.concat(arrFinal2);
+    arrFinal1.forEach(function (mov, i) {
+      let str =
+        mov < 3
+          ? `Dog number ${i + 1} is still a puppy`
+          : `Dog 🐶 number ${i + 1}is an adult, and is ${mov} years old`;
+      console.log(str);
+    });
+  }
+  checkDogs(dogs1, dogs2);
+  console.log(dogs1);
+  console.log(dogs1.map(dg => dg * 2));
+</script>
