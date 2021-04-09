@@ -1,2 +1,4 @@
-# bankist app
-minimal banking simulation app
+# Bankist app
+Minimal banking simulation app
+
+Implemented transefar, loan , closing account, transections history, shorting transaction fuctionality using javaScript
